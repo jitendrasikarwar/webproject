@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+    <link rel="stylesheet" type="text/css" href="static/work.css">
+</head>
+<body>
+<div class="head">
+
+    <h1 id="heading"><img src="{% static 'static/icon.jpg'%}"/>COOL WORKING</h1>
+</div>
+<br>Home<br>
+<a href="{% urls 'account' %"> sign up </a><a href="account/login.html" > login </a>
+<div class="foot">
+    <h1 id="footer">end of side</h1>
+</div>
+
+</body>
+</html>

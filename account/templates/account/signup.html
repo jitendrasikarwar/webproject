@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign up</title>
+</head>
+<body>
+<h1>sign up</h1>
+<div class="form">
+    please Enter you username & password .....<br/><br/>
+    <br/>{{ error }}<br/>
+    <form action="{% url 'signup' %}" method="post"> {% csrf_token %}
+        <label> Username :</label>
+        <input type="text" name="username" placeholder="Enter your name" /><br/><br/>
+        <label> Email :</label>
+        <input type="email" name="useremail" placeholder="Enter E-mail" /><br/><br/>
+        <label>Password :</label>
+        <input type="password" name="password1" placeholder="Enter your password"/><br/><br/>
+        <label> Again Password :</label>
+        <input type="password" name="password2" placeholder="Enter your password"/><br/><br/>
+        <a href="">if account is already exist?...</a>
+        <input type="submit" value="Sign up! !"/>
+    </form>
+</body>
+</html>
